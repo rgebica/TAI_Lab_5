@@ -14,6 +14,8 @@ import { BlogItemDetailsComponent } from './components/blog-item-details/blog-it
 import {HttpClientModule} from '@angular/common/http';
 import {DataService} from './services/data.service';
 import {SummaryPipe} from './pipes/summary.pipe';
+import {FormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -26,12 +28,13 @@ import {SummaryPipe} from './pipes/summary.pipe';
     BlogItemTextComponent,
     BlogItemImageComponent,
     BlogItemDetailsComponent,
-    SummaryPipe
+    SummaryPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [
     DataService
