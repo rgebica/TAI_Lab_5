@@ -14,8 +14,7 @@ export class BlogHomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  getName($event){
+  getName($event) {
     this.filterText = $event;
   }
-
 }
