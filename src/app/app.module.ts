@@ -24,6 +24,7 @@ import {LoginComponent} from './components/login/login.component';
 import {AuthInterceptor} from './services/auth.interceptor';
 import {DataService} from './services/data.service';
 import { SignupComponent } from './components/signup/signup.component';
+import {AuthGuard} from './services/auth.guard';
 
 @NgModule({
   declarations: [
@@ -57,10 +58,12 @@ import { SignupComponent } from './components/signup/signup.component';
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
+      // tslint:disable-next-line:object-literal-sort-keys
       multi: true
     },
     DataService
   ],
+  // tslint:disable-next-line:object-literal-sort-keys
   bootstrap: [AppComponent]
 })
 export class AppModule {

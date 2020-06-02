@@ -8,9 +8,9 @@ import {AuthService} from '../../services/auth.service';
 })
 export class SignupComponent implements OnInit {
   public credentials = {
-    name: '',
-    email: '',
-    password: '',
+    name: "",
+    email: "",
+    password: "",
   };
 
   constructor(private authService: AuthService) { }
